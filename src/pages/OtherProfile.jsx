@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { HomeSidebar } from "../components/HomeSidebar";
-import { ProfileHeader } from "../components/OtherUser/profileHeader";
+import { ProfileHeader } from "../components/OtherUser/ProfileHeader";
 import "./styles/OtherProfile.css";
 import { useParams } from "react-router-dom";
 import axios from "../config/axiosConfig";
