@@ -1,9 +1,9 @@
 import axios from "axios";
-const API_URL = import.meta.env.VITE_API_URL;
+const API_URL = "/api"; // No need for VITE_API_URL here anymore, or it can point to just "/api"
 
 const axiosInstance = axios.create({
-  baseURL: API_URL || "http://localhost:3000", // your backend URL
-  withCredentials: true, // important: sends cookies with every request
+  baseURL: API_URL, // Now this will be "/api"
+  withCredentials: true,
 });
 
 export default axiosInstance;
