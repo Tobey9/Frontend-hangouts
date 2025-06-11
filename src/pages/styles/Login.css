@@ -1,0 +1,45 @@
+.login {
+  display: flex;
+  flex-direction: column;
+
+  margin: 5rem auto;
+  width: 350px;
+}
+
+.login h2 {
+  margin-bottom: 20px;
+}
+
+.login button {
+  width: 300px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.login button:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.login p:first-of-type {
+  margin: 10px 0 10px 8rem;
+}
+
+.login p:last-of-type {
+  margin: 10px 0;
+}
+
+.login input {
+  width: 260px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.login .login-button {
+  background-color: #000;
+  color: #fff;
+  margin-top: 10px;
+}

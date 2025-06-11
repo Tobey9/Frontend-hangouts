@@ -1,0 +1,10 @@
+.profile-content {
+  margin: 0 0 0 10px;
+
+  width: 600px;
+}
+
+.profile-content .post {
+  border-left: 1px solid #353535;
+  border-right: 1px solid #353535;
+}

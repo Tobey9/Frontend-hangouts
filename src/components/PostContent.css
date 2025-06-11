@@ -1,0 +1,52 @@
+.post-content {
+  margin: 60px 0 0 10px;
+  border: 1px solid #353535;
+
+  width: 600px;
+}
+
+.post-buttons {
+  margin: 0 20px 0 60px;
+  border-top: 1px solid #353535;
+  border-bottom: 1px solid #353535;
+}
+
+.post-content .post-action {
+  margin: 20px 20px 20px 60px;
+  display: flex;
+}
+
+.post-content .post-action input {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+  width: 80%;
+}
+
+.post-content .post-action input:focus {
+  outline: none;
+}
+
+.post-content .post-action button {
+  background-color: #353535;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+  color: #fff;
+}
+
+.post-content .comment {
+  padding: 15px 20px 10px 60px;
+  border-bottom: 1px solid #353535;
+  display: flex;
+}
+
+.post-content .comment .delete .delete-button {
+  background-color: #d33737;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}

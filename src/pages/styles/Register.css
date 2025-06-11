@@ -1,0 +1,34 @@
+.register {
+  display: flex;
+  flex-direction: column;
+
+  margin: 5rem auto;
+  width: 350px;
+}
+
+.register h2 {
+  margin-bottom: 10px;
+}
+
+.register input {
+  display: block;
+  padding: 10px 20px;
+  width: 300px;
+  border: 1px solid #ccc;
+  margin: 15px 0;
+}
+
+.register button {
+  width: 340px;
+  padding: 10px 20px;
+  border: none;
+  color: #fff;
+  margin-top: 10px;
+  border-radius: 20px;
+  background-color: rgb(165, 165, 165);
+}
+
+.register button:hover {
+  background-color: #838383;
+  cursor: pointer;
+}

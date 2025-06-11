@@ -1,0 +1,56 @@
+.user-post {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-bottom: 1px solid #353535;
+  width: 550px;
+}
+
+.user {
+  display: flex;
+}
+
+.user textarea {
+  width: 90%;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.user textarea:focus {
+  outline: none;
+}
+
+.user-post .buttons {
+  display: flex;
+}
+
+.user-post .buttons .left {
+  padding: 10px 0 0 50px;
+}
+
+.user-post .buttons .icon {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.user-post .buttons .right button {
+  background-color: #353535;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+  color: #fff;
+}
+
+.user-post .image-url-input {
+  margin: 10px 0 0 50px;
+}
+
+.user-post .image-url-input input {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 200px;
+}

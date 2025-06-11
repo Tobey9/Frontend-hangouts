@@ -1,0 +1,25 @@
+.profile-header .links-profile {
+  display: flex;
+  justify-content: space-around;
+}
+.profile-header .links-profile div {
+  padding: 10px 20px;
+}
+
+.profile-header .background {
+  width: 100%;
+  height: 200px;
+  background-color: #353535;
+  position: relative;
+}
+
+.profile-header .background .follow-button {
+  position: absolute;
+  bottom: -50px;
+  right: 10px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+}

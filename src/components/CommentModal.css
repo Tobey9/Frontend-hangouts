@@ -1,0 +1,57 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-overlay .modal-content {
+  background: #353535;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.modal-overlay .close-button {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-overlay .comment-input {
+  display: flex;
+  gap: 8px;
+}
+
+.modal-overlay .comment-input input {
+  flex: 1;
+  padding: 6px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+}
+
+.modal-overlay .comment-input input:focus {
+  outline: none;
+}
+
+.modal-overlay .comment-input button {
+  padding: 6px 12px;
+  background-color: #b1b1b1;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}

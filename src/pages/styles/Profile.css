@@ -1,0 +1,8 @@
+.profile {
+  display: flex;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+}
