@@ -19,3 +19,47 @@ body.default-background {
   background-color: black;
   color: white;
 }
+
+.app-container {
+  width: 100%; /* Full width on mobile */
+  padding: 10px; /* Some padding around the edges on mobile */
+  margin: 0 auto; /* Center content horizontally if max-width is set */
+  flex-grow: 1; /* Allows the container to grow and take available space */
+  display: flex;
+  flex-direction: column; /* Content stacks vertically on mobile */
+  align-items: center; /* Center content horizontally within flex container */
+}
+
+.main-content {
+  width: 100%;
+  max-width: 600px; /* Example max width for mobile content readability */
+  padding: 15px; /* Padding for content inside the main area */
+}
+
+@media screen and (min-width: 768px) {
+  .app-container {
+    padding: 20px; /* More padding on larger screens */
+  }
+
+  .main-content {
+    max-width: 900px; /* Wider content area on tablets */
+  }
+}
+
+/* For desktops and larger displays (e.g., 1024px and up) */
+@media screen and (min-width: 1024px) {
+  .app-container {
+    flex-direction: row; /* Layout elements side-by-side on desktop */
+    justify-content: center; /* Center the entire layout horizontally */
+    align-items: flex-start; /* Align items to the top if side-by-side */
+    padding: 30px;
+    max-width: 1400px; /* Example max width for the overall app container on large screens */
+  }
+
+  .main-content {
+    max-width: 1000px; /* Even wider content area on desktops */
+    flex-grow: 1; /* Allow main content to take available space in row layout */
+    margin-left: 20px; /* Add some space if there's a sidebar to the left */
+    margin-right: 20px; /* Add some space if there's a sidebar to the right */
+  }
+}
