@@ -68,3 +68,23 @@
   color: #3a8cd4;
   margin-top: 10px;
 }
+
+@media screen and (max-width: 1000px) {
+  .main h1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .right-side h2 {
+    font-size: 2rem;
+  }
+
+  .right-side h3 {
+    font-size: 1.5rem;
+  }
+
+  .right-side p {
+    font-size: 0.9rem;
+  }
+}

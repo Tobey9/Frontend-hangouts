@@ -103,3 +103,47 @@
   cursor: pointer;
   padding: 5px;
 }
+
+@media screen and (max-width: 1255px) {
+  .right .input-container {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 898px) {
+  .navbar .left {
+    width: 80px;
+  }
+
+  .navbar .left h3 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .navbar .left {
+    width: 0;
+  }
+}
+
+@media screen and (max-width: 604px) {
+  .navbar .center {
+    width: 100%;
+    margin: 0;
+    border: none;
+  }
+
+  .navbar .center div {
+    padding: 5px 10px;
+  }
+
+  .navbar .center {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar .center p {
+    font-size: 14px;
+  }
+}

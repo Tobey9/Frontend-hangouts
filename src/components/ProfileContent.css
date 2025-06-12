@@ -8,3 +8,14 @@
   border-left: 1px solid #353535;
   border-right: 1px solid #353535;
 }
+
+@media screen and (max-width: 604px) {
+  .profile-content {
+    width: 100%;
+  }
+
+  .profile-content .post {
+    border-left: none;
+    border-right: none;
+  }
+}

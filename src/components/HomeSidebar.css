@@ -40,3 +40,24 @@
   background-color: #fcfbfbc2;
   cursor: pointer;
 }
+
+@media screen and (max-width: 898px) {
+  .home-sidebar {
+    width: 50px;
+  }
+
+  .home-sidebar p {
+    display: none;
+  }
+
+  .home-sidebar button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  .home-sidebar {
+    width: 0;
+    margin: 70px 0 0 0;
+  }
+}

@@ -107,3 +107,15 @@
   height: 100%;
   object-fit: cover;
 }
+
+@media screen and (max-width: 667px) {
+  .home-content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 604px) {
+  .home-content {
+    width: 100%;
+  }
+}
