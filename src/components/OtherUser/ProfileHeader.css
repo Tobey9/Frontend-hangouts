@@ -23,3 +23,17 @@
   padding: 10px 20px;
   border-radius: 20px;
 }
+@media screen and (max-width: 604px) {
+  .profile-header {
+    width: 100%;
+  }
+
+  .profile-header .background {
+    height: 150px;
+  }
+  .profile-header .background .follow-button {
+    bottom: -40px;
+    right: 5px;
+    padding: 8px 15px;
+  }
+}

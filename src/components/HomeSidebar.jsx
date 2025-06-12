@@ -1,15 +1,29 @@
 import React from "react";
 import "./HomeSidebar.css";
 import { IoNotificationsOutline } from "react-icons/io5";
+import { IoMdExit } from "react-icons/io";
+
+import axios from "../config/axiosConfig";
 
 import { IoSearchOutline } from "react-icons/io5";
 import { IoMailOutline } from "react-icons/io5";
 import { IoHomeOutline } from "react-icons/io5";
 import { IoPersonOutline } from "react-icons/io5";
-import { IoEllipsisHorizontalCircle } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 
 export const HomeSidebar = () => {
+  const handleLogout = async () => {
+    try {
+      await axios.post("/users/logout", {}, { withCredentials: true });
+      toast.success("Logout successful");
+      window.location.href = "/login"; // Redirect to login page after logout
+    } catch (error) {
+      console.error("Logout failed:", error);
+      toast.error("Logout failed, please try again");
+    }
+  };
+
   return (
     <div className="home-sidebar">
       <Link to="/">
@@ -33,10 +47,9 @@ export const HomeSidebar = () => {
         </div>
       </Link>
 
-      <div>
-        <IoEllipsisHorizontalCircle className="icon" /> <p>More</p>
+      <div onClick={handleLogout} className="logout">
+        <IoMdExit className="icon" /> <p>Logout</p>
       </div>
-      <button>Post</button>
     </div>
   );
 };

@@ -33,15 +33,16 @@ export const Login = () => {
     });
   };
 
+  const handleGoogleLogin = () => {
+    // Correctly point to the /api proxy path, which Netlify will forward to your backend.
+    window.location.href = "/api/users/authGoogle";
+  };
+
   return (
     <div className="login">
       <h2>Sign in to Hangouts</h2>
 
-      <button
-        onClick={() => {
-          window.location.href = "http://localhost:3000/users/authGoogle";
-        }}
-      >
+      <button onClick={handleGoogleLogin}>
         <FcGoogle />
         Sign in with Google
       </button>
