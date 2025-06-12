@@ -28,10 +28,10 @@ function AppLayout({ children }) {
   }, [location.pathname, shouldWhiteBg]);
 
   return (
-    <>
+    <div className="app-container">
       {!shouldHideNavbar && <Navbar />}
-      <main>{children}</main>
-    </>
+      <main className="main-content">{children}</main>
+    </div>
   );
 }
 
